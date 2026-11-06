@@ -1,67 +1,1586 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f4f0">
-  <meta name="description" content="The portfolio of Satish — selected work, skills, and contact information.">
-  <title>Satish — Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="wordmark" href="#home" aria-label="Satish, home"><span class="wordmark-mark">S</span><span>satish<span class="wordmark-dot">.</span></span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
-    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-      <a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a class="nav-contact" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
 
-  <main id="main">
-    <section class="hero section-wrap" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> PORTFOLIO · 2026</p>
-        <h1>Making ideas<br>feel <span class="serif-accent">simple.</span></h1>
-        <p class="hero-intro">Hi, I’m <strong>Satish</strong>. I’m building my skills and creating thoughtful digital experiences. This is where I share what I’m learning and the work I’m proud of.</p>
-        <div class="hero-actions"><a class="button button-dark" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pawan Yadav | Portfolio</title>
+
+    <!-- ================= CSS ================= -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ================= FONT AWESOME ================= -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ============================================================
+         SCROLL PROGRESS BAR
+         ============================================================ -->
+
+    <div class="scroll-progress"></div>
+
+    <!-- ============================================================
+         NAVBAR
+         ============================================================ -->
+
+    <header class="navbar">
+      <!-- ================= LOGO ================= -->
+
+      <div class="logo">Pawan</div>
+
+      <!-- ================= NAVIGATION ================= -->
+
+      <nav>
+        <!--
+            <a href="#home">Home</a>
+            -->
+
+        <a href="#home" class="active"> Home </a>
+
+        <a href="#about"> About </a>
+
+        <a href="#education"> Education </a>
+
+        <a href="#skills"> Skills </a>
+
+        <a href="#internship"> Internship </a>
+
+        <a href="#projects"> Projects </a>
+
+        <a href="#certificates"> Certificates </a>
+
+        <a href="#contact"> Contact </a>
+      </nav>
+
+      <!-- ================= LIVE CLOCK ================= -->
+
+      <div class="clock">
+        <div id="date"></div>
+
+        <div id="time"></div>
       </div>
-      <div class="hero-art" aria-label="Abstract green and cream geometric artwork" role="img">
-        <div class="art-ring ring-one"></div><div class="art-ring ring-two"></div><div class="art-sun"></div><div class="art-orbit"></div><div class="art-caption">CURIOUS BY NATURE<br>CREATING WITH PURPOSE</div><div class="art-index">01 / 04</div>
+
+      <!-- ================= THEME TOGGLE ================= -->
+
+      <div class="theme-toggle" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon"></i>
       </div>
-      <div class="hero-bottom"><span>BASED IN INDIA</span><a href="#about">SCROLL TO DISCOVER <span aria-hidden="true">↓</span></a></div>
-    </section>
 
-    <section class="about section-wrap section-pad" id="about">
-      <div class="section-heading"><p class="eyebrow">01 — A LITTLE ABOUT ME</p><span class="heading-line"></span></div>
-      <div class="about-grid"><h2>Good work starts<br>with <span class="serif-accent">curiosity.</span></h2><div class="about-copy"><p>I’m at the beginning of my creative journey, learning how to turn ideas into useful, clear experiences on the web. I care about the small details, enjoy solving problems, and believe the best work keeps the people using it in mind.</p><p>This portfolio will grow as I do. Take a look around, and feel free to say hello.</p><a class="underlined-link" href="#contact">A little more about working together <span aria-hidden="true">↗</span></a></div></div>
-      <div class="about-note"><span class="note-star">✳</span><span>Always learning.<br>Always making.</span></div>
-    </section>
+      <!-- ================= MOBILE MENU ================= -->
 
-    <section class="work section-pad" id="work">
-      <div class="section-wrap">
-        <div class="section-heading"><p class="eyebrow">02 — SELECTED WORK</p><span class="heading-line"></span><span class="section-count">A COLLECTION IN PROGRESS</span></div>
-        <div class="work-intro"><h2>Ideas made <span class="serif-accent">real.</span></h2><p>Every project starts somewhere. Here are a few spaces to showcase the things you’ve built, the questions you explored, and what you learned along the way.</p></div>
-        <div class="project-grid">
-          <article class="project-card"><a class="project-visual visual-lime" href="#contact" aria-label="Ask me about my first project"><span class="visual-kicker">01 / WEB DESIGN</span><div class="browser-frame"><div class="browser-top"><i></i><i></i><i></i><span>your-first-project.com</span></div><div class="browser-content"><div class="browser-pill">A PROJECT BY SATISH</div><div class="browser-title">A fresh<br>beginning<span>.</span></div><div class="browser-line"></div><div class="browser-orb"></div></div></div><span class="visual-arrow">↗</span></a><div class="project-meta"><div><h3>Your first project</h3><p>Add a short description of what you made and why.</p></div><span class="project-type">2026</span></div></article>
-          <article class="project-card"><a class="project-visual visual-blue" href="#contact" aria-label="Ask me about my second project"><span class="visual-kicker">02 / CREATIVE WORK</span><div class="poster-art"><span class="poster-small">A STUDY IN<br>FORM & COLOUR</span><span class="poster-big">Make<br>room<span>.</span></span><div class="poster-shape"></div><span class="poster-foot">PROJECT TWO · 2026</span></div><span class="visual-arrow">↗</span></a><div class="project-meta"><div><h3>Another thing I made</h3><p>Replace this with a project, experiment, or case study.</p></div><span class="project-type">2026</span></div></article>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
+
+    <section id="home" class="hero">
+      <!-- ================= HERO CONTENT ================= -->
+
+      <div class="hero-content">
+        <p class="welcome">-WELCOME TO MY PORTFOLIO</p>
+
+        <h3>Hello, I'm</h3>
+
+        <h1>Pawan <span>Yadav</span></h1>
+
+        <h2>
+          <span id="typing"></span>
+        </h2>
+
+        <p class="description">
+          Computer Science Engineering student (2024–2028) with a passion for
+          Java, Data Structures & Algorithms, AI, and modern web development.
+          Enthusiastic about building real-world projects, solving challenging
+          problems, and growing as a software engineer.
+        </p>
+
+        <!-- ================= HERO BUTTONS ================= -->
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary-btn"> View Projects </a>
+
+          <!-- ================= SOCIAL LINKS ================= -->
+
+          <div class="social-links">
+            <!-- GitHub -->
+
+            <a
+              href="https://github.com/pawanyadav85"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <!-- LinkedIn -->
+
+            <a
+              href="https://linkedin.com/in/pawan-yadav-68b211330"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <!-- LeetCode -->
+
+            <a
+              href="https://leetcode.com/u/PawanYadav8521/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://cdn.simpleicons.org/leetcode/F89F1B"
+                alt="LeetCode"
+              />
+            </a>
+
+            <!-- GeeksForGeeks -->
+
+            <a
+              href="https://www.geeksforgeeks.org/profile/pkyyadav852159?tab=activity"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://cdn.simpleicons.org/geeksforgeeks/2F8D46"
+                alt="GeeksForGeeks"
+              />
+            </a>
+
+            <!-- Gmail -->
+
+            <a href="mailto:pkyyadav8521@gmail.com">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+
+          <!-- ================= RESUME BUTTON ================= -->
+
+          <a href="#" class="btn resume-btn" id="openResume"> View Resume </a>
         </div>
-        <p class="project-hint"><span aria-hidden="true">✳</span> Replace these sample project cards with links to your own work.</p>
+      </div>
+
+      <!-- ================= HERO IMAGE ================= -->
+
+      <div class="hero-image">
+        <img src="assets/profile.jpg" alt="Pawan Yadav" />
+
+        <div class="badge badge1">Java</div>
+
+        <div class="badge badge2">DSA</div>
+
+        <div class="badge badge3">Available for Internship</div>
       </div>
     </section>
 
-    <section class="skills section-wrap section-pad" id="skills">
-      <div class="section-heading"><p class="eyebrow">03 — WHAT I BRING</p><span class="heading-line"></span></div>
-      <div class="skills-grid"><div><h2>Learning,<br>one <span class="serif-accent">step</span> at a time.</h2><p class="skills-intro">These are good starting points. Update the list as your skills and interests grow.</p></div><div class="skill-list"><div class="skill-row"><span>01</span><strong>HTML & CSS</strong><span class="skill-tag">WEB FOUNDATIONS</span></div><div class="skill-row"><span>02</span><strong>JavaScript</strong><span class="skill-tag">IN PROGRESS</span></div><div class="skill-row"><span>03</span><strong>Visual design</strong><span class="skill-tag">PRACTICE</span></div><div class="skill-row"><span>04</span><strong>Problem solving</strong><span class="skill-tag">EVERY DAY</span></div></div></div>
+    <!-- ============================================================
+         ABOUT SECTION
+         ============================================================ -->
+
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <!-- ================= ABOUT LEFT ================= -->
+
+        <div class="about-left">
+          <p class="about-title">ABOUT ME</p>
+
+          <h2>Passionate Computer Science Engineering Student</h2>
+
+          <p class="about-text">
+            I'm Pawan Yadav, a Computer Science Engineering student with a
+            strong interest in Java, Data Structures & Algorithms, Web
+            Development, and Software Engineering.
+          </p>
+
+          <p class="about-text">
+            I enjoy building modern and responsive websites, solving coding
+            problems, and continuously learning new technologies.
+          </p>
+
+          <div class="about-buttons">
+            <a href="#projects" class="about-btn"> View Projects </a>
+          </div>
+        </div>
+
+        <!-- ================= ABOUT RIGHT ================= -->
+
+        <div class="about-right">
+          <div class="about-card">
+            <h3>2+</h3>
+
+            <p>Programming Languages</p>
+          </div>
+
+          <div class="about-card">
+            <h3>100+</h3>
+
+            <p>DSA Problems</p>
+          </div>
+
+          <div class="about-card">
+            <h3>5+</h3>
+
+            <p>Projects</p>
+          </div>
+
+          <div class="about-card">
+            <h3>2028</h3>
+
+            <p>Graduation Year</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="contact section-pad" id="contact"><div class="section-wrap contact-inner"><p class="eyebrow">04 — SAY HELLO</p><h2>Have an idea?<br><span class="serif-accent">Let’s talk.</span></h2><p class="contact-copy">I’d love to hear from you. Add your email address below so people can get in touch.</p><a class="button button-light" href="mailto:satishyadav963172@gmail.com">satishyadav963172@gmail.com <span aria-hidden="true">↗</span></a><span class="contact-spark" aria-hidden="true">✳</span></div></section>
-  </main>
+    <!-- ============================================================
+         EDUCATION SECTION
+         ============================================================ -->
 
-  <footer class="site-footer"><a class="wordmark footer-mark" href="#home"><span class="wordmark-mark">S</span><span>satish<span class="wordmark-dot">.</span></span></a><p>Made with care, one step at a time.</p><div class="footer-links"><a href="https://github.com/Satish-53" target="_blank" rel="noreferrer">GitHub ↗</a><span>© <span id="year">2026</span> Satish</span></div></footer>
-</body>
+    <section id="education" class="education-section">
+      <p class="education-subtitle">EDUCATION</p>
+
+      <h2 class="education-heading">My Education Journey</h2>
+
+      <div class="timeline">
+        <!-- ================= B.TECH ================= -->
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+
+          <div class="education-card">
+            <span class="education-year"> 2024 - 2028 </span>
+
+            <h3>Bachelor of Technology (CSE)</h3>
+
+            <h4>Jai Narain College of Technology, Bhopal</h4>
+
+            <p>
+              Pursuing B.Tech in Computer Science Engineering with a strong
+              focus on Java, DSA, Web Development and Software Engineering.
+            </p>
+
+            <div class="education-grade">CGPA : 7.7/10</div>
+          </div>
+        </div>
+
+        <!-- ================= 12TH ================= -->
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+
+          <div class="education-card">
+            <span class="education-year"> 2022 - 2024 </span>
+
+            <h3>Higher Secondary Education</h3>
+
+            <h4>Ghaghra Inter Science College</h4>
+
+            <p>
+              Completed higher secondary education with a strong academic
+              foundation in science.
+            </p>
+
+            <div class="education-grade">Score : 405/500</div>
+          </div>
+        </div>
+
+        <!-- ================= 10TH ================= -->
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+
+          <div class="education-card">
+            <span class="education-year"> 2022 </span>
+
+            <h3>Secondary Education (10th)</h3>
+
+            <h4>Lakhsya Convent Public School Durgi Dhawaiya</h4>
+
+            <p>
+              Completed secondary education with a strong academic foundation.
+            </p>
+
+            <div class="education-grade">Score : 446/500</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKILLS SECTION
+         ============================================================ -->
+
+    <section id="skills" class="skills-section">
+      <!-- ================= SECTION HEADER ================= -->
+
+      <p class="skills-subtitle">MY SKILLS</p>
+
+      <h2 class="skills-heading">Technical Skills</h2>
+
+      <!-- ================= SKILLS GRID ================= -->
+
+      <div class="skills-grid">
+        <!-- ====================================================
+                 PROGRAMMING
+                 ==================================================== -->
+
+        <div class="skill-card">
+          <h3>Programming</h3>
+
+          <!-- Java -->
+
+          <div class="skill">
+            <span> Java </span>
+
+            <span> 85% </span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress java" data-progress="85"></div>
+          </div>
+
+          <!-- C++ -->
+
+          <div class="skill">
+            <span> C++ </span>
+
+            <span> 80% </span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress cpp" data-progress="80"></div>
+          </div>
+
+          <!-- Python -->
+
+          <div class="skill">
+            <span> Python </span>
+
+            <span> 75% </span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress python" data-progress="75"></div>
+          </div>
+
+          <!-- DSA -->
+
+          <div class="skill">
+            <span> DSA </span>
+
+            <span> 75% </span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress dsa" data-progress="75"></div>
+          </div>
+        </div>
+
+        <!-- ====================================================
+                 FRONTEND
+                 ==================================================== -->
+
+        <div class="skill-card">
+          <h3>Frontend</h3>
+
+          <!-- HTML -->
+
+          <div class="skill">
+            <span> HTML </span>
+
+            <span> 90% </span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress html" data-progress="90"></div>
+          </div>
+
+          <!-- CSS -->
+
+          <div class="skill">
+            <span> CSS </span>
+
+            <span> 85% </span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress css" data-progress="85"></div>
+          </div>
+
+          <!-- JavaScript -->
+
+          <div class="skill">
+            <span> JavaScript </span>
+
+            <span> 80% </span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress javascript" data-progress="80"></div>
+          </div>
+        </div>
+
+        <!-- ====================================================
+                 BACKEND
+                 ==================================================== -->
+
+        <div class="skill-card">
+          <h3>Backend</h3>
+
+          <!-- Spring -->
+
+          <div class="skill">
+            <span> Spring </span>
+
+            <span> 70% </span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress spring" data-progress="70"></div>
+          </div>
+
+          <!-- Spring Boot -->
+
+          <div class="skill">
+            <span> Spring Boot </span>
+
+            <span> 65% </span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress springboot" data-progress="65"></div>
+          </div>
+
+          <!-- Node.js -->
+
+          <div class="skill">
+            <span> Node.js </span>
+
+            <span> 70% </span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress node" data-progress="70"></div>
+          </div>
+        </div>
+
+        <!-- ====================================================
+                 DATABASE & TOOLS
+                 ==================================================== -->
+
+        <div class="skill-card">
+          <h3>Database & Tools</h3>
+
+          <!-- MongoDB -->
+
+          <div class="skill">
+            <span> MongoDB </span>
+
+            <span> 75% </span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress mongodb" data-progress="75"></div>
+          </div>
+
+          <!-- MySQL -->
+
+          <div class="skill">
+            <span> MySQL </span>
+
+            <span> 75% </span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress mysql" data-progress="75"></div>
+          </div>
+
+          <!-- Git -->
+
+          <div class="skill">
+            <span> Git </span>
+
+            <span> 80% </span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress git" data-progress="80"></div>
+          </div>
+
+          <!-- GitHub -->
+
+          <div class="skill">
+            <span> GitHub </span>
+
+            <span> 85% </span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress github" data-progress="85"></div>
+          </div>
+
+          <!-- VS Code -->
+
+          <div class="skill">
+            <span> VS Code </span>
+
+            <span> 90% </span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress vscode" data-progress="90"></div>
+          </div>
+
+          <!-- IntelliJ IDEA -->
+
+          <div class="skill">
+            <span> IntelliJ IDEA </span>
+
+            <span> 85% </span>
+          </div>
+
+          <div class="progress-bar">
+            <div class="progress intellij" data-progress="85"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         INTERNSHIP SECTION
+         ============================================================ -->
+
+    <section class="internship-section" id="internship">
+      <p class="internship-subtitle">INTERNSHIP</p>
+
+      <h2 class="internship-heading">My Internship Journey</h2>
+
+      <div class="internship-grid">
+        <!-- Internship 01 -->
+
+        <div class="internship-card">
+          <h3>Generative AI</h3>
+
+          <h4>EduSkills Academy</h4>
+
+          <p>Deep Learning, LLM, RAG, PyTorch</p>
+
+          <span> July 2026 • 8 Weeks </span>
+
+          <a href="assets/PyTorch.pdf" target="_blank"> View Certificate </a>
+        </div>
+
+        <!-- Internship 02 -->
+
+        <div class="internship-card">
+          <h3>Virtual Internship</h3>
+
+          <h4>AICTE + EduSkills</h4>
+
+          <p>Generative AI, Deep Learning & Language Models</p>
+
+          <span> April-June 2026 </span>
+
+          <a href="assets/FistInternship.pdf" target="_blank">
+            View Certificate
+          </a>
+        </div>
+
+        <!-- Internship 03 -->
+
+        <div class="internship-card">
+          <h3>Internship Credential</h3>
+
+          <h4>EduSkills Academy</h4>
+
+          <p>LLM, RAG, Chatbots, Fine-Tuning</p>
+
+          <span> July 2026 </span>
+
+          <a href="assets/Android.pdf" target="_blank"> View Certificate </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PROJECTS SECTION
+         ============================================================ -->
+
+    <section id="projects" class="projects-section">
+      <p class="projects-subtitle">PROJECTS</p>
+
+      <h2 class="projects-heading">My Featured Projects</h2>
+
+      <div class="projects-grid">
+        <!-- ================= PROJECT 01 ================= -->
+
+        <div class="project-card">
+          <h3>Student Management System</h3>
+
+          <p>
+            A system for managing student records with add, edit, update and
+            delete functionality.
+          </p>
+
+          <div class="project-tech">
+            <span> Java </span>
+
+            <span> MySQL </span>
+
+            <span> HTML </span>
+
+            <span> CSS </span>
+          </div>
+
+          <div class="project-buttons">
+            <a href="#" class="project-btn"> Live Demo </a>
+
+            <a
+              href="https://github.com/pawanyadav85"
+              class="project-btn project-btn-outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source Code
+            </a>
+          </div>
+        </div>
+
+        <!-- ================= PROJECT 02 ================= -->
+
+        <div class="project-card">
+          <h3>To-Do List Application</h3>
+
+          <p>
+            A task management application for creating, updating and tracking
+            daily tasks.
+          </p>
+
+          <div class="project-tech">
+            <span> HTML </span>
+
+            <span> CSS </span>
+
+            <span> JavaScript </span>
+          </div>
+
+          <div class="project-buttons">
+            <a href="#" class="project-btn"> Live Demo </a>
+
+            <a
+              href="https://github.com/pawanyadav85"
+              class="project-btn project-btn-outline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CERTIFICATES SECTION
+         ============================================================ -->
+
+    <section class="certificate-section" id="certificates">
+      <p class="certificate-subtitle">CERTIFICATIONS</p>
+
+      <h2 class="certificate-title">Courses & Certifications</h2>
+
+      <!-- ========================================================
+             TOP ROW
+             RIGHT TO LEFT
+             ======================================================== -->
+             
+
+      <div class="certificate-marquee">
+        <div class="certificate-track left">
+          <!-- Certificate 01 -->
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 01 </span>
+
+            <h3>DSA</h3>
+
+            <p>Data Structures and Algorithms using Java</p>
+
+            <img src="assets/001.png" alt="DSA Certificate" />
+
+            <a href="assets/DSA Certificate001.pdf" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+          <!-- Certificate 02 -->
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 02 </span>
+
+            <h3>Core Java</h3>
+
+            <p>Java Programming Fundamentals</p>
+
+            <img src="assets/java Fundamentls.png" alt="Java Certificate" />
+
+            <a href="assets/java Fundamentls.png" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+
+          <!-- Certificate 03 -->
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 03 </span>
+
+            <h3>NoSQL Databases</h3>
+
+            <p>Introduction to NoSQL Databases</p>
+
+            <img src="assets/SQL.png" alt="NoSQL Certificate" />
+
+            <a href="assets/SQL.pdf" target="_blank"> View Certificate ↗ </a>
+          </div>
+
+
+
+          <!-- Certificate 04 -->
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 04 </span>
+
+            <h3>Software Engineering</h3>
+
+            <p>Software Engineering and Agile Software Development</p>
+
+            <img
+              src="assets/Software.png"
+              alt="Software Engineering Certificate"
+            />
+
+            <a href="assets/Software.pdf" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+
+                    <!-- Certificate 05 -->
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 05 </span>
+
+            <h3>DCA Diploma in Computer Applications</h3>
+
+            <p>Diploma in Computer Applications</p>
+
+            <img
+              src="assets/Certificate-05.jpeg"
+              alt="Software Engineering Certificate"
+            />
+
+            <a href="assets/Certificate-05.jpeg" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+          
+                    <!-- Certificate 06 -->
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 06 </span>
+
+            <h3>AI/ML Workshop – GeeksforGeeks</h3>
+
+            <p>Certificate of Appreciation for successfully attending the AI/ML Workshop during SCEECS’26</p>
+
+            <img
+              src="assets/Certificate-06.jpeg"
+              alt="Software Engineering Certificate"
+            />
+
+            <a href="assets/Certificate-06.jpeg" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+          
+                    <!-- Certificate 07 -->
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 07 </span>
+
+            <h3>Digital Dominator – Quiz & Coding Competition</h3>
+
+            <p>Certificate of Participation | Quiz & Coding Competition</p>
+
+            <img
+              src="assets/Certificate-07.png"
+              alt="Software Engineering Certificate"
+            />
+
+            <a href="assets/Certificate-07.png" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+
+  
+
+
+          <!-- ================= DUPLICATE SET FOR MARQUEE ================= -->
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 01 </span>
+
+            <h3>DSA</h3>
+
+            <p>Data Structures and Algorithms using Java</p>
+
+            <img src="assets/001.png" alt="DSA Certificate" />
+
+            <a href="assets/DSA Certificate001.pdf" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 02 </span>
+
+            <h3>Core Java</h3>
+
+            <p>Java Programming Fundamentals</p>
+
+            <img src="assets/java Fundamentls.png" alt="Java Certificate" />
+
+            <a href="assets/java Fundamentls.png" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 03 </span>
+
+            <h3>NoSQL Databases</h3>
+
+            <p>Introduction to NoSQL Databases</p>
+
+            <img src="assets/SQL.png" alt="NoSQL Certificate" />
+
+            <a href="assets/SQL.pdf" target="_blank"> View Certificate ↗ </a>
+          </div>
+
+
+
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 04 </span>
+
+            <h3>Software Engineering</h3>
+
+            <p>Software Engineering and Agile Software Development</p>
+
+            <img
+              src="assets/Software.png"
+              alt="Software Engineering Certificate"
+            />
+
+            <a href="assets/Software.pdf" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+
+
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 05 </span>
+
+            <h3>DCA (Diploma in Computer Applications)</h3>
+
+            <p>Diploma in Computer Application</p>
+
+            <img src="assets/Certificate-05.jpeg" alt="Java Certificate" />
+
+            <a href="assets/Certificate-05.jpeg" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+
+               <div class="certificate-card">
+            <span class="certificate-number"> 06 </span>
+
+            <h3>AI/ML Workshop – GeeksforGeeks</h3>
+
+            <p>Certificate of Appreciation for successfully attending the AI/ML Workshop during SCEECS’26</p>
+
+            <img src="assets/Certificate-06.jpeg" alt="Java Certificate" />
+
+            <a href="assets/Certificate-06.jpeg" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+               <div class="certificate-card">
+            <span class="certificate-number"> 07 </span>
+
+            <h3>Digital Dominator – Quiz & Coding Competition</h3>
+
+            <p>Certificate of Participation | Quiz & Coding Competitio</p>
+
+            <img src="assets/Certificate-07.png" alt="Java Certificate" />
+
+            <a href="assets/Certificate-07.png" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+      <!-- ========================================================
+             BOTTOM ROW
+             LEFT TO RIGHT
+             ======================================================== -->
+
+      <div class="certificate-marquee">
+        <div class="certificate-track right">
+
+
+          <!-- Certificate 07 -->
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 07 </span>
+
+            <h3>NoSQL Databases</h3>
+
+            <p>Introduction to NoSQL Databases</p>
+
+            <img src="assets/SQL.png" alt="NoSQL Certificate" />
+
+            <a href="assets/SQL.pdf" target="_blank"> View Certificate ↗ </a>
+          </div>
+
+
+
+          <!-- Certificate 06 -->
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 06 </span>
+
+            <h3>Software Engineering</h3>
+
+            <p>Software Engineering and Agile Software Development</p>
+
+            <img
+              src="assets/Software.png"
+              alt="Software Engineering Certificate"
+            />
+
+            <a href="assets/Software.pdf" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+
+
+          <!-- Certificate 05 -->
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 05 </span>
+
+            <h3>DSA</h3>
+
+            <p>Data Structures and Algorithms using Java</p>
+
+            <img src="assets/001.png" alt="DSA Certificate" />
+
+            <a href="assets/DSA Certificate001.pdf" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+
+
+          <!-- Certificate 04 -->
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 04 </span>
+
+            <h3>Core Java</h3>
+
+            <p>Java Programming Fundamentals</p>
+
+            <img src="assets/java Fundamentls.png" alt="Java Certificate" />
+
+            <a href="assets/java Fundamentls.png" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+          <!-- Certificate 03 -->
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 03 </span>
+
+            <h3>DCA (Diploma in Computer Applications)</h3>
+
+            <p>Diploma in Computer Applications</p>
+
+            <img src="assets/Certificate-05.jpeg" alt="Java Certificate" />
+
+            <a href="assets/Certificate-05.jpeg" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+          
+          <!-- Certificate 02 -->
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 02 </span>
+
+            <h3>AI/ML Workshop – GeeksforGeeks</h3>
+
+            <p>Certificate of Appreciation for successfully attending the AI/ML Workshop during SCEECS’26</p>
+
+            <img src="assets/Certificate-06.jpeg" alt="Java Certificate" />
+
+            <a href="assets/Certificate-06.jpeg" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+                   <!-- Certificate 01 -->
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 01 </span>
+
+            <h3>Digital Dominator – Quiz & Coding Competition</h3>
+
+            <p>Certificate of Participation | Quiz & Coding Competition</p>
+
+            <img src="assets/Certificate-07.png" alt="Java Certificate" />
+
+            <a href="assets/Certificate-07.png" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+          <!-- add here                               -->
+
+
+
+
+          <!-- ================= DUPLICATE SET FOR MARQUEE ================= -->
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 07 </span>
+
+            <h3>NoSQL Databases</h3>
+
+            <p>Introduction to NoSQL Databases</p>
+
+            <img src="assets/SQL.png" alt="NoSQL Certificate" />
+
+            <a href="assets/SQL.pdf" target="_blank"> View Certificate ↗ </a>
+          </div>
+
+
+
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 06 </span>
+
+            <h3>Software Engineering</h3>
+
+            <p>Software Engineering and Agile Software Development</p>
+
+            <img
+              src="assets/Software.png"
+              alt="Software Engineering Certificate"
+            />
+
+            <a href="assets/Software.pdf" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 05 </span>
+
+            <h3>DSA</h3>
+
+            <p>Data Structures and Algorithms using Java</p>
+
+            <img src="assets/001.png" alt="DSA Certificate" />
+
+            <a href="assets/DSA Certificate001.pdf" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 04 </span>
+
+            <h3>Core Java</h3>
+
+            <p>Java Programming Fundamentals</p>
+
+            <img src="assets/java Fundamentls.png" alt="Java Certificate" />
+
+            <a href="assets/java Fundamentls.png" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+
+
+
+
+          <div class="certificate-card">
+            <span class="certificate-number"> 03 </span>
+
+            <h3>DCA (Diploma in Computer Applications)</h3>
+
+            <p>Diploma in Computer Applications</p>
+
+            <img src="assets/Certificate-05.jpeg" alt="Java Certificate" />
+
+            <a href="assets/Certificate-05.jpeg" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+
+
+
+              <div class="certificate-card">
+            <span class="certificate-number"> 02 </span>
+
+            <h3>AI/ML Workshop – GeeksforGeeks</h3>
+
+            <p>Certificate of Appreciation for successfully attending the AI/ML Workshop during SCEECS’26</p>
+
+            <img src="assets/Certificate-06.jpeg" alt="Java Certificate" />
+
+            <a href="assets/Certificate-06.jpeg" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+
+
+          
+              <div class="certificate-card">
+            <span class="certificate-number"> 01 </span>
+
+            <h3>Digital Dominator – Quiz & Coding Competition</h3>
+
+            <p>Certificate of Participation | Quiz & Coding Competition</p>
+
+            <img src="assets/Certificate-07.png" alt="Java Certificate" />
+
+            <a href="assets/Certificate-07.png" target="_blank">
+              View Certificate ↗
+            </a>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION
+         ============================================================ -->
+
+    <section class="contact-section" id="contact">
+      <p class="contact-subtitle">CONTACT</p>
+
+      <h2 class="contact-title">Let's Work Together</h2>
+
+      <p class="contact-description">
+        Have a project in mind? Feel free to contact me. I'm always open to
+        discussing new opportunities.
+      </p>
+
+      <div class="contact-container">
+        <!-- ================= CONTACT INFO ================= -->
+
+        <div class="contact-info">
+          <!-- Email -->
+
+          <div class="info-card">
+            <span> 📧 </span>
+
+            <div>
+              <h3>Email</h3>
+
+              <a href="mailto:pkyyadav8521@gmail.com">
+                pkyyadav8521@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <!-- Phone -->
+
+          <div class="info-card">
+            <span> 📱 </span>
+
+            <div>
+              <h3>Phone</h3>
+
+              <a href="tel:+918521599013"> +91 8521599013 </a>
+            </div>
+          </div>
+
+          <!-- GitHub -->
+
+          <div class="info-card">
+            <span> 💻 </span>
+
+            <div>
+              <h3>GitHub</h3>
+
+              <a
+                href="https://github.com/pawanyadav85"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Profile
+              </a>
+            </div>
+          </div>
+
+          <!-- LinkedIn -->
+
+          <div class="info-card">
+            <span> 💼 </span>
+
+            <div>
+              <h3>LinkedIn</h3>
+
+              <a
+                href="https://linkedin.com/in/pawan-yadav-68b211330"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Connect With Me
+              </a>
+            </div>
+          </div>
+
+          <!-- Location -->
+
+          <div class="info-card">
+            <span> 📍 </span>
+
+            <div>
+              <h3>Location</h3>
+
+              <p>Bhopal, India</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= CONTACT FORM ================= -->
+
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/pkyyadav8521@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+
+          <input type="text" name="name" placeholder="Your Name" required />
+
+          <input type="email" name="email" placeholder="Your Email" required />
+
+          <input type="text" name="subject" placeholder="Subject" required />
+
+          <textarea
+            name="message"
+            placeholder="Write your message..."
+            required
+          ></textarea>
+
+          <button type="submit">Send Message 🚀</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BACK TO TOP BUTTON
+         ============================================================ -->
+
+    <button class="top-btn" onclick="scrollToTop()">↑</button>
+
+    <!-- ============================================================
+         RESUME PREVIEW MODAL
+         ============================================================ -->
+
+    <div class="resume-modal" id="resumeModal">
+      <div class="resume-content">
+        <span class="close-modal"> &times; </span>
+
+        <iframe src="assets/MY RESUME NEW.pdf"> </iframe>
+
+        <a href="assets/MY RESUME NEW.pdf" download class="download-btn">
+          Download Resume
+        </a>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         PREMIUM DEVELOPER FOOTER
+         ============================================================ -->
+
+    <footer class="footer">
+      <!-- ================= GLOW ================= -->
+
+      <div class="footer-glow footer-glow-one"></div>
+
+      <div class="footer-glow footer-glow-two"></div>
+
+      <div class="footer-container">
+        <!-- ================= BRAND ================= -->
+
+        <div class="footer-brand">
+          <div class="footer-logo-wrapper">
+            <div class="footer-logo">PY</div>
+
+            <div class="footer-logo-ring"></div>
+          </div>
+
+          <!-- ================= STATUS ================= -->
+
+          <div class="footer-status">
+            <span class="status-dot"></span>
+
+            Available for Internship
+          </div>
+
+          <!-- ================= TITLE ================= -->
+
+          <h2 class="footer-title">
+            Let's Build Something
+            <span>Great.</span>
+          </h2>
+
+          <!-- ================= DESCRIPTION ================= -->
+
+          <p class="footer-description">
+            Computer Science Engineering student passionate about Java, Data
+            Structures & Algorithms, software development and building
+            real-world solutions.
+          </p>
+        </div>
+
+        <!-- ====================================================
+                 SOCIAL LINKS
+                 ==================================================== -->
+
+        <div class="footer-socials">
+          <!-- Instagram -->
+
+          <a
+            href="https://www.instagram.com/itz_smiley_boy013/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social"
+          >
+            <span class="social-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+
+            <span> Instagram </span>
+          </a>
+
+          <!-- Facebook -->
+
+          <a
+            href="https://www.facebook.com/share/1HH3cruiem/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social"
+          >
+            <span class="social-icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </span>
+
+            <span> Facebook </span>
+          </a>
+
+          <!-- Gmail -->
+
+          <a href="mailto:pkyyadav8521@gmail.com" class="footer-social">
+            <span class="social-icon">
+              <i class="fa-regular fa-envelope"></i>
+            </span>
+
+            <span> Gmail </span>
+          </a>
+        </div>
+
+        <!-- ====================================================
+                 FOOTER NAVIGATION
+                 ==================================================== -->
+
+        <div class="footer-navigation">
+          <a href="#home"> Home </a>
+
+          <span>•</span>
+
+          <a href="#about"> About </a>
+
+          <span>•</span>
+
+          <a href="#education"> Education </a>
+
+          <span>•</span>
+
+          <a href="#skills"> Skills </a>
+
+          <span>•</span>
+
+          <a href="#internship"> Internship </a>
+
+          <span>•</span>
+
+          <a href="#projects"> Projects </a>
+
+          <span>•</span>
+
+          <a href="#certificates"> Certificates </a>
+
+          <span>•</span>
+
+          <a href="#contact"> Contact </a>
+        </div>
+
+        <!-- ====================================================
+                 DIVIDER
+                 ==================================================== -->
+
+        <div class="footer-divider">
+          <span></span>
+        </div>
+
+        <!-- ====================================================
+                 TECH STACK
+                 ==================================================== -->
+
+        <div class="footer-tech">
+          <span> JAVA </span>
+
+          <span> DSA </span>
+
+          <span> HTML </span>
+
+          <span> CSS </span>
+
+          <span> JAVASCRIPT </span>
+        </div>
+
+        <!-- ====================================================
+                 FOOTER BOTTOM
+                 ==================================================== -->
+
+        <div class="footer-bottom">
+          <p>
+            ©
+            <span id="footer-year"> 2026 </span>
+
+            Pawan Yadav
+          </p>
+
+          <p class="footer-made">
+            Crafted with
+
+            <span class="footer-heart"> ♥ </span>
+
+            & Code
+          </p>
+
+          <p>All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+         WHATSAPP CHAT BUTTON
+         ============================================================ -->
+
+    <a
+      href="https://wa.me/918521599013"
+      class="whatsapp-chat"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+
+      <span> Chat With Me </span>
+    </a>
+
+    <!-- ============================================================
+         JAVASCRIPT
+         ============================================================ -->
+
+    <script src="script.js"></script>
+  </body>
 </html>
